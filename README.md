@@ -1,3 +1,5 @@
+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
+
 # Nutrition-Cal
 Calculadora Nutricional
 
@@ -8,7 +10,7 @@ En esta tarea se proporciona una APP python (Calculadora Nutricional) y se prete
 
 ### Pre-Requisitos
 - Debeis de tener instalado Jenkins en vuestro ordenador en Local.
-- Se necesitará un plugin para ejecutar comandos Docker llamado Docker-Pipeline. Este plugin os lo podréis descargar directamente desde la administración de Jenkins.
+- Se necesitará un plugin para ejecutar comandos Docker llamado Docker-Pipeline. Este plugin os lo podréis descargar directamente desde la administración de Jenkins.Cancel changes
 - Opcionalmente podréis tener instalado el plugin de Jenkins "Blue Ocean" para visualizar los resultados de forma interactiva.
 
 ### Pasos
