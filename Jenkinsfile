@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             
             steps {
-            	git brach: 'main', url: 'https://github.com/nmartinse/Nutrition-Cal'
+            	git branch: 'main', url: 'https://github.com/nmartinse/Nutrition-Cal'
                 sh 'python -m py_compile sources/calorias.py sources/Calory_Cal.py'
                 stash(name: 'compiled-results', includes: 'sources/*.py*')
             }
