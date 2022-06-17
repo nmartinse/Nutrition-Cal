@@ -1,5 +1,3 @@
-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
-
 # Nutrition-Cal
 Calculadora Nutricional
 
