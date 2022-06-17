@@ -1,11 +1,14 @@
 pipeline {
-    agent any
+    agent none
     stages {
         stage('Build') {
-            
+            agent {
+                docker {
+                    image 'python:2-alpine'
+                }
+            }
             steps {
-            	git branch: 'main', url: 'https://github.com/nmartinse/Nutrition-Cal'
-                sh 'python -m py_compile sources/calorias.py sources/Calory_Cal.py'
+                sh 'python -m py_compile sources/Calory_Cal.py sources/calorias.py'
                 stash(name: 'compiled-results', includes: 'sources/*.py*')
             }
         }
@@ -46,4 +49,3 @@ pipeline {
         }
     }
 }
-
